@@ -30,11 +30,19 @@ jobs:
           pip install -r requirements.txt
 
       - name: Install Playwright Browsers
-        run: playwright install --with-deps
+        run: npx playwright install --with-deps
 
       - name: Run Tests
         run: pytest --alluredir=allure-results
         continue-on-error: true
+
+      - name: Get Allure history
+        uses: actions/checkout@v4
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
 
       - name: Allure Report Action
         uses: simple-elf/allure-report-action@master
@@ -49,4 +57,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: allure-report
+          publish_dir: allure-history
+          publish_branch: gh-pages
