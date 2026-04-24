@@ -1,0 +1,19 @@
+# Python & Virtual Environments
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+*.pyc
+
+# Playwright Reports & Config (из вашего старого файла)
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
+
+# Environment & Private data
+.env
+debug_output.txt
+screenshots/

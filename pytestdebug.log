@@ -1,0 +1,1446 @@
+versions pytest-9.0.2, python-3.13.7.final.0
+invocation_dir=C:\Users\yasni\PythonMcp
+cwd=C:\Users\yasni\PythonMcp
+args=('tests/e2e_tests/test_navigation_about_section_e2e.py', '--headed', '--debug')
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x000001F18C24BB60>
+    pytest_plugin_registered [hook]
+        plugin: <Session  exitstatus='<UNSET>' testsfailed=0 testscollected=0>
+        plugin_name: session
+        manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x000001F18C24BB60>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001F18EDDFA10>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001F18F1FD6A0>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <pytest_rerunfailures.XDistHooks object at 0x000001F18F1FD400>
+          plugin_name: 2136999973888
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: faulthandler [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+          plugin_name: 2136931069504
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x000001F18C24BB60>
+          plugin_name: pytestconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\mark\\__init__.py'>
+          plugin_name: mark
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\main.py'>
+          plugin_name: main
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\runner.py'>
+          plugin_name: runner
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\fixtures.py'>
+          plugin_name: fixtures
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\helpconfig.py'>
+          plugin_name: helpconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\python.py'>
+          plugin_name: python
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\terminal.py'>
+          plugin_name: terminal
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\debugging.py'>
+          plugin_name: debugging
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\unittest.py'>
+          plugin_name: unittest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\capture.py'>
+          plugin_name: capture
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\skipping.py'>
+          plugin_name: skipping
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\legacypath.py'>
+          plugin_name: legacypath
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\tmpdir.py'>
+          plugin_name: tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\monkeypatch.py'>
+          plugin_name: monkeypatch
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\recwarn.py'>
+          plugin_name: recwarn
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\pastebin.py'>
+          plugin_name: pastebin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\assertion\\__init__.py'>
+          plugin_name: assertion
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\junitxml.py'>
+          plugin_name: junitxml
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\doctest.py'>
+          plugin_name: doctest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\cacheprovider.py'>
+          plugin_name: cacheprovider
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\setuponly.py'>
+          plugin_name: setuponly
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\setupplan.py'>
+          plugin_name: setupplan
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\stepwise.py'>
+          plugin_name: stepwise
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\unraisableexception.py'>
+          plugin_name: unraisableexception
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\threadexception.py'>
+          plugin_name: threadexception
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\warnings.py'>
+          plugin_name: warnings
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\logging.py'>
+          plugin_name: logging
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\reports.py'>
+          plugin_name: reports
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\faulthandler.py'>
+          plugin_name: faulthandler
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.subtests' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\subtests.py'>
+          plugin_name: subtests
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'allure_pytest.plugin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\allure_pytest\\plugin.py'>
+          plugin_name: allure_pytest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'anyio.pytest_plugin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\anyio\\pytest_plugin.py'>
+          plugin_name: anyio
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_base_url.plugin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest_base_url\\plugin.py'>
+          plugin_name: base_url
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_playwright.pytest_playwright' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest_playwright\\pytest_playwright.py'>
+          plugin_name: playwright
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_rerunfailures' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest_rerunfailures.py'>
+          plugin_name: rerunfailures
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'xdist.plugin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\xdist\\plugin.py'>
+          plugin_name: xdist
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'xdist.looponfail' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\xdist\\looponfail.py'>
+          plugin_name: xdist.looponfail
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=9 _state='suspended' tmpfile=<EncodedFile name='<tempfile._TemporaryFileWrapper object at 0x000001F18F1FCEC0>' mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=11 _state='suspended' tmpfile=<EncodedFile name='<tempfile._TemporaryFileWrapper object at 0x000001F18F230CD0>' mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=7 _state='started' tmpfile=<_io.TextIOWrapper name='nul' mode='r' encoding='utf-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          plugin_name: capturemanager
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'conftest' from 'C:\\Users\\yasni\\PythonMcp\\tests\\conftest.py'>
+          plugin_name: C:\Users\yasni\PythonMcp\tests\conftest.py
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          plugin_name: session
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001F18EDDFA10>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001F18F1FD6A0>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <pytest_rerunfailures.XDistHooks object at 0x000001F18F1FD400>
+          plugin_name: 2136999973888
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x000001F18F1FDD30>
+          plugin_name: terminalreporter
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+    matched marked file '_pytest.terminalprogress' (from '_pytest.terminalprogress') [assertion]
+    find_module called for: _pytest.terminalprogress [assertion]
+    found cached rewritten pyc for C:\Users\yasni\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\terminalprogress.py [assertion]
+      pytest_configure [hook]
+          config: <_pytest.config.Config object at 0x000001F18C24BB60>
+        pytest_plugin_registered [hook]
+            plugin: <_pytest.terminal.TerminalProgressPlugin object at 0x000001F18F1FE510>
+            plugin_name: terminalprogress-plugin
+            manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+        finish pytest_plugin_registered --> [] [hook]
+      finish pytest_configure --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminalprogress' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\terminalprogress.py'>
+          plugin_name: terminalprogress
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x000001F18F1FE7B0>
+          plugin_name: logging-plugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+          plugin_name: 2136931069504
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x000001F18C24BB60>
+          plugin_name: pytestconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\mark\\__init__.py'>
+          plugin_name: mark
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\main.py'>
+          plugin_name: main
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\runner.py'>
+          plugin_name: runner
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\fixtures.py'>
+          plugin_name: fixtures
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\helpconfig.py'>
+          plugin_name: helpconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\python.py'>
+          plugin_name: python
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\terminal.py'>
+          plugin_name: terminal
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\debugging.py'>
+          plugin_name: debugging
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\unittest.py'>
+          plugin_name: unittest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\capture.py'>
+          plugin_name: capture
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\skipping.py'>
+          plugin_name: skipping
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\legacypath.py'>
+          plugin_name: legacypath
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\tmpdir.py'>
+          plugin_name: tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\monkeypatch.py'>
+          plugin_name: monkeypatch
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\recwarn.py'>
+          plugin_name: recwarn
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\pastebin.py'>
+          plugin_name: pastebin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\assertion\\__init__.py'>
+          plugin_name: assertion
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\junitxml.py'>
+          plugin_name: junitxml
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\doctest.py'>
+          plugin_name: doctest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\cacheprovider.py'>
+          plugin_name: cacheprovider
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\setuponly.py'>
+          plugin_name: setuponly
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\setupplan.py'>
+          plugin_name: setupplan
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\stepwise.py'>
+          plugin_name: stepwise
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\unraisableexception.py'>
+          plugin_name: unraisableexception
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\threadexception.py'>
+          plugin_name: threadexception
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\warnings.py'>
+          plugin_name: warnings
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\logging.py'>
+          plugin_name: logging
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\reports.py'>
+          plugin_name: reports
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\faulthandler.py'>
+          plugin_name: faulthandler
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.subtests' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\subtests.py'>
+          plugin_name: subtests
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'allure_pytest.plugin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\allure_pytest\\plugin.py'>
+          plugin_name: allure_pytest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'anyio.pytest_plugin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\anyio\\pytest_plugin.py'>
+          plugin_name: anyio
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_base_url.plugin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest_base_url\\plugin.py'>
+          plugin_name: base_url
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_playwright.pytest_playwright' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest_playwright\\pytest_playwright.py'>
+          plugin_name: playwright
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_rerunfailures' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest_rerunfailures.py'>
+          plugin_name: rerunfailures
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'xdist.plugin' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\xdist\\plugin.py'>
+          plugin_name: xdist
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'xdist.looponfail' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\xdist\\looponfail.py'>
+          plugin_name: xdist.looponfail
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=9 _state='suspended' tmpfile=<EncodedFile name='<tempfile._TemporaryFileWrapper object at 0x000001F18F1FCEC0>' mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=11 _state='suspended' tmpfile=<EncodedFile name='<tempfile._TemporaryFileWrapper object at 0x000001F18F230CD0>' mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=7 _state='started' tmpfile=<_io.TextIOWrapper name='nul' mode='r' encoding='utf-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          plugin_name: capturemanager
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'conftest' from 'C:\\Users\\yasni\\PythonMcp\\tests\\conftest.py'>
+          plugin_name: C:\Users\yasni\PythonMcp\tests\conftest.py
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          plugin_name: session
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001F18EDDFA10>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001F18F1FD6A0>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <pytest_rerunfailures.XDistHooks object at 0x000001F18F1FD400>
+          plugin_name: 2136999973888
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x000001F18F1FDD30>
+          plugin_name: terminalreporter
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalProgressPlugin object at 0x000001F18F1FE510>
+          plugin_name: terminalprogress-plugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminalprogress' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\terminalprogress.py'>
+          plugin_name: terminalprogress
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x000001F18F1FE7B0>
+          plugin_name: logging-plugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x000001F18F1FF0E0>
+          plugin_name: funcmanage
+          manager: <_pytest.config.PytestPluginManager object at 0x000001F18B046E40>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_report_header [hook]
+          config: <_pytest.config.Config object at 0x000001F18C24BB60>
+          start_path: C:\Users\yasni\PythonMcp
+          startdir: C:\Users\yasni\PythonMcp
+      early skip of rewriting module: importlib.metadata._adapters [assertion]
+      early skip of rewriting module: email.message [assertion]
+      early skip of rewriting module: quopri [assertion]
+      early skip of rewriting module: email.utils [assertion]
+      early skip of rewriting module: email._parseaddr [assertion]
+      early skip of rewriting module: email.errors [assertion]
+      early skip of rewriting module: email._policybase [assertion]
+      early skip of rewriting module: email.header [assertion]
+      early skip of rewriting module: email.quoprimime [assertion]
+      early skip of rewriting module: email.base64mime [assertion]
+      early skip of rewriting module: email.charset [assertion]
+      early skip of rewriting module: email.encoders [assertion]
+      early skip of rewriting module: email._encoded_words [assertion]
+      early skip of rewriting module: email.iterators [assertion]
+      early skip of rewriting module: importlib.metadata._text [assertion]
+      early skip of rewriting module: email.parser [assertion]
+      early skip of rewriting module: email.feedparser [assertion]
+      finish pytest_report_header --> [['rootdir: C:\\Users\\yasni\\PythonMcp', 'configfile: pytest.ini', 'plugins: allure-pytest-2.15.0, anyio-4.12.1, base-url-2.1.0, playwright-0.7.2, rerunfailures-16.1, xdist-3.8.0'], 'baseurl: https://www.mwtestconsultancy.co.uk/', 'cachedir: .pytest_cache', ['using: pytest-9.0.2', 'registered third-party plugins:', '  allure-pytest-2.15.0 at C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\allure_pytest\\plugin.py', '  anyio-4.12.1 at C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\anyio\\pytest_plugin.py', '  pytest-base-url-2.1.0 at C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest_base_url\\plugin.py', '  pytest-playwright-0.7.2 at C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest_playwright\\pytest_playwright.py', '  pytest-rerunfailures-16.1 at C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest_rerunfailures.py', '  pytest-xdist-3.8.0 at C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\xdist\\plugin.py', '  pytest-xdist-3.8.0 at C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\xdist\\looponfail.py']] [hook]
+    finish pytest_sessionstart --> [] [hook]
+    pytest_collection [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    perform_collect <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0> ['tests/e2e_tests/test_navigation_about_section_e2e.py'] [collection]
+        pytest_collectstart [hook]
+            collector: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        finish pytest_collectstart --> [] [hook]
+        pytest_make_collect_report [hook]
+            collector: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        processing argument CollectionArgument(path=WindowsPath('C:/Users/yasni/PythonMcp/tests/e2e_tests/test_navigation_about_section_e2e.py'), parts=[], parametrization=None, module_name=None, original_index=0) [collection]
+            pytest_collect_directory [hook]
+                path: C:\Users\yasni\PythonMcp
+                parent: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+            finish pytest_collect_directory --> <Dir PythonMcp> [hook]
+            pytest_collectstart [hook]
+                collector: <Dir PythonMcp>
+            finish pytest_collectstart --> [] [hook]
+            pytest_make_collect_report [hook]
+                collector: <Dir PythonMcp>
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\.env
+                  path: C:\Users\yasni\PythonMcp\.env
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\.env
+                  path: C:\Users\yasni\PythonMcp\.env
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\.github
+                  path: C:\Users\yasni\PythonMcp\.github
+              finish pytest_ignore_collect --> True [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\.gitignore
+                  path: C:\Users\yasni\PythonMcp\.gitignore
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\.gitignore
+                  path: C:\Users\yasni\PythonMcp\.gitignore
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\.idea
+                  path: C:\Users\yasni\PythonMcp\.idea
+              finish pytest_ignore_collect --> True [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\.pytest_cache
+                  path: C:\Users\yasni\PythonMcp\.pytest_cache
+              finish pytest_ignore_collect --> True [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\.venv
+                  path: C:\Users\yasni\PythonMcp\.venv
+              finish pytest_ignore_collect --> True [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\.vscode
+                  path: C:\Users\yasni\PythonMcp\.vscode
+              finish pytest_ignore_collect --> True [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\click_error_Books.png
+                  path: C:\Users\yasni\PythonMcp\click_error_Books.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\click_error_Books.png
+                  path: C:\Users\yasni\PythonMcp\click_error_Books.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\click_error_Tools.png
+                  path: C:\Users\yasni\PythonMcp\click_error_Tools.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\click_error_Tools.png
+                  path: C:\Users\yasni\PythonMcp\click_error_Tools.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\debug_frame_Books.png
+                  path: C:\Users\yasni\PythonMcp\debug_frame_Books.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\debug_frame_Books.png
+                  path: C:\Users\yasni\PythonMcp\debug_frame_Books.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\debug_frame_Tools.png
+                  path: C:\Users\yasni\PythonMcp\debug_frame_Tools.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\debug_frame_Tools.png
+                  path: C:\Users\yasni\PythonMcp\debug_frame_Tools.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\error_report_attempt_3.png
+                  path: C:\Users\yasni\PythonMcp\error_report_attempt_3.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\error_report_attempt_3.png
+                  path: C:\Users\yasni\PythonMcp\error_report_attempt_3.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\fail_search_Books.png
+                  path: C:\Users\yasni\PythonMcp\fail_search_Books.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\fail_search_Books.png
+                  path: C:\Users\yasni\PythonMcp\fail_search_Books.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\fail_search_Tools.png
+                  path: C:\Users\yasni\PythonMcp\fail_search_Tools.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\fail_search_Tools.png
+                  path: C:\Users\yasni\PythonMcp\fail_search_Tools.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\pages
+                  path: C:\Users\yasni\PythonMcp\pages
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_directory [hook]
+                  path: C:\Users\yasni\PythonMcp\pages
+                  parent: <Dir PythonMcp>
+              finish pytest_collect_directory --> <Package pages> [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\pytest.ini
+                  path: C:\Users\yasni\PythonMcp\pytest.ini
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\pytest.ini
+                  path: C:\Users\yasni\PythonMcp\pytest.ini
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\pytestdebug.log
+                  path: C:\Users\yasni\PythonMcp\pytestdebug.log
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\pytestdebug.log
+                  path: C:\Users\yasni\PythonMcp\pytestdebug.log
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\requirements.txt
+                  path: C:\Users\yasni\PythonMcp\requirements.txt
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\requirements.txt
+                  path: C:\Users\yasni\PythonMcp\requirements.txt
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\screenshots
+                  path: C:\Users\yasni\PythonMcp\screenshots
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_directory [hook]
+                  path: C:\Users\yasni\PythonMcp\screenshots
+                  parent: <Dir PythonMcp>
+              finish pytest_collect_directory --> <Dir screenshots> [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\search_error_Books.png
+                  path: C:\Users\yasni\PythonMcp\search_error_Books.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\search_error_Books.png
+                  path: C:\Users\yasni\PythonMcp\search_error_Books.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\search_error_Tools.png
+                  path: C:\Users\yasni\PythonMcp\search_error_Tools.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\search_error_Tools.png
+                  path: C:\Users\yasni\PythonMcp\search_error_Tools.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\search_final_success.png
+                  path: C:\Users\yasni\PythonMcp\search_final_success.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\search_final_success.png
+                  path: C:\Users\yasni\PythonMcp\search_final_success.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\search_success.png
+                  path: C:\Users\yasni\PythonMcp\search_success.png
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir PythonMcp>
+                  file_path: C:\Users\yasni\PythonMcp\search_success.png
+                  path: C:\Users\yasni\PythonMcp\search_success.png
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\test-results
+                  path: C:\Users\yasni\PythonMcp\test-results
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_directory [hook]
+                  path: C:\Users\yasni\PythonMcp\test-results
+                  parent: <Dir PythonMcp>
+              finish pytest_collect_directory --> <Dir test-results> [hook]
+              pytest_collect_directory [hook]
+                  path: C:\Users\yasni\PythonMcp\tests
+                  parent: <Dir PythonMcp>
+              finish pytest_collect_directory --> <Dir tests> [hook]
+            finish pytest_make_collect_report --> <CollectReport '.' lenresult=4 outcome='passed'> [hook]
+            pytest_collectstart [hook]
+                collector: <Dir tests>
+            finish pytest_collectstart --> [] [hook]
+            pytest_make_collect_report [hook]
+                collector: <Dir tests>
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\UI_tests
+                  path: C:\Users\yasni\PythonMcp\tests\UI_tests
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_directory [hook]
+                  path: C:\Users\yasni\PythonMcp\tests\UI_tests
+                  parent: <Dir tests>
+              finish pytest_collect_directory --> <Dir UI_tests> [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\__pycache__
+                  path: C:\Users\yasni\PythonMcp\tests\__pycache__
+              finish pytest_ignore_collect --> True [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\conftest.py
+                  path: C:\Users\yasni\PythonMcp\tests\conftest.py
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\conftest.py
+                  path: C:\Users\yasni\PythonMcp\tests\conftest.py
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\debug_output.txt
+                  path: C:\Users\yasni\PythonMcp\tests\debug_output.txt
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\debug_output.txt
+                  path: C:\Users\yasni\PythonMcp\tests\debug_output.txt
+              finish pytest_collect_file --> [] [hook]
+              pytest_collect_directory [hook]
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests
+                  parent: <Dir tests>
+              finish pytest_collect_directory --> <Dir e2e_tests> [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\page_content.html
+                  path: C:\Users\yasni\PythonMcp\tests\page_content.html
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\page_content.html
+                  path: C:\Users\yasni\PythonMcp\tests\page_content.html
+              finish pytest_collect_file --> [] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\parametrized_tests
+                  path: C:\Users\yasni\PythonMcp\tests\parametrized_tests
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_directory [hook]
+                  path: C:\Users\yasni\PythonMcp\tests\parametrized_tests
+                  parent: <Dir tests>
+              finish pytest_collect_directory --> <Package parametrized_tests> [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\venv
+                  path: C:\Users\yasni\PythonMcp\tests\venv
+              finish pytest_ignore_collect --> True [hook]
+            finish pytest_make_collect_report --> <CollectReport 'tests' lenresult=3 outcome='passed'> [hook]
+            pytest_collectstart [hook]
+                collector: <Dir e2e_tests>
+            finish pytest_collectstart --> [] [hook]
+            pytest_make_collect_report [hook]
+                collector: <Dir e2e_tests>
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\__pycache__
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\__pycache__
+              finish pytest_ignore_collect --> True [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_about_flow.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_about_flow.py
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir e2e_tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_about_flow.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_about_flow.py
+                pytest_pycollect_makemodule [hook]
+                    parent: <Dir e2e_tests>
+                    module_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_about_flow.py
+                    path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_about_flow.py
+                finish pytest_pycollect_makemodule --> <Module test_about_flow.py> [hook]
+              finish pytest_collect_file --> [<Module test_about_flow.py>] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_e2e_flow.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_e2e_flow.py
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir e2e_tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_e2e_flow.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_e2e_flow.py
+                pytest_pycollect_makemodule [hook]
+                    parent: <Dir e2e_tests>
+                    module_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_e2e_flow.py
+                    path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_e2e_flow.py
+                finish pytest_pycollect_makemodule --> <Module test_e2e_flow.py> [hook]
+              finish pytest_collect_file --> [<Module test_e2e_flow.py>] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_homepage_displays_book_cards.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_homepage_displays_book_cards.py
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir e2e_tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_homepage_displays_book_cards.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_homepage_displays_book_cards.py
+                pytest_pycollect_makemodule [hook]
+                    parent: <Dir e2e_tests>
+                    module_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_homepage_displays_book_cards.py
+                    path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_homepage_displays_book_cards.py
+                finish pytest_pycollect_makemodule --> <Module test_homepage_displays_book_cards.py> [hook]
+              finish pytest_collect_file --> [<Module test_homepage_displays_book_cards.py>] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_indepdendent_flow.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_indepdendent_flow.py
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir e2e_tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_indepdendent_flow.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_indepdendent_flow.py
+                pytest_pycollect_makemodule [hook]
+                    parent: <Dir e2e_tests>
+                    module_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_indepdendent_flow.py
+                    path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_indepdendent_flow.py
+                finish pytest_pycollect_makemodule --> <Module test_indepdendent_flow.py> [hook]
+              finish pytest_collect_file --> [<Module test_indepdendent_flow.py>] [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir e2e_tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_navigation_about_section_e2e.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_navigation_about_section_e2e.py
+                pytest_pycollect_makemodule [hook]
+                    parent: <Dir e2e_tests>
+                    module_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_navigation_about_section_e2e.py
+                    path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_navigation_about_section_e2e.py
+                finish pytest_pycollect_makemodule --> <Module test_navigation_about_section_e2e.py> [hook]
+              finish pytest_collect_file --> [<Module test_navigation_about_section_e2e.py>] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_open_article_and_verify_title_e2e.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_open_article_and_verify_title_e2e.py
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir e2e_tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_open_article_and_verify_title_e2e.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_open_article_and_verify_title_e2e.py
+                pytest_pycollect_makemodule [hook]
+                    parent: <Dir e2e_tests>
+                    module_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_open_article_and_verify_title_e2e.py
+                    path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_open_article_and_verify_title_e2e.py
+                finish pytest_pycollect_makemodule --> <Module test_open_article_and_verify_title_e2e.py> [hook]
+              finish pytest_collect_file --> [<Module test_open_article_and_verify_title_e2e.py>] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_e2e.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_e2e.py
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir e2e_tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_e2e.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_e2e.py
+                pytest_pycollect_makemodule [hook]
+                    parent: <Dir e2e_tests>
+                    module_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_e2e.py
+                    path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_e2e.py
+                finish pytest_pycollect_makemodule --> <Module test_search_e2e.py> [hook]
+              finish pytest_collect_file --> [<Module test_search_e2e.py>] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_via_iframe.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_via_iframe.py
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_file [hook]
+                  parent: <Dir e2e_tests>
+                  file_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_via_iframe.py
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_via_iframe.py
+                pytest_pycollect_makemodule [hook]
+                    parent: <Dir e2e_tests>
+                    module_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_via_iframe.py
+                    path: C:\Users\yasni\PythonMcp\tests\e2e_tests\test_search_via_iframe.py
+                finish pytest_pycollect_makemodule --> <Module test_search_via_iframe.py> [hook]
+              finish pytest_collect_file --> [<Module test_search_via_iframe.py>] [hook]
+              pytest_ignore_collect [hook]
+                  config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                  collection_path: C:\Users\yasni\PythonMcp\tests\e2e_tests\tests
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\tests
+              finish pytest_ignore_collect --> None [hook]
+              pytest_collect_directory [hook]
+                  path: C:\Users\yasni\PythonMcp\tests\e2e_tests\tests
+                  parent: <Dir e2e_tests>
+              finish pytest_collect_directory --> <Dir tests> [hook]
+            finish pytest_make_collect_report --> <CollectReport 'tests/e2e_tests' lenresult=9 outcome='passed'> [hook]
+        finish pytest_make_collect_report --> <CollectReport '' lenresult=1 outcome='passed'> [hook]
+        pytest_collectreport [hook]
+            report: <CollectReport '' lenresult=1 outcome='passed'>
+        finish pytest_collectreport --> [] [hook]
+    genitems <Module test_navigation_about_section_e2e.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module test_navigation_about_section_e2e.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module test_navigation_about_section_e2e.py>
+      find_module called for: test_navigation_about_section_e2e [assertion]
+      matched test file (was specified on cmdline): 'C:\\Users\\yasni\\PythonMcp\\tests\\e2e_tests\\test_navigation_about_section_e2e.py' [assertion]
+      found cached rewritten pyc for C:\Users\yasni\PythonMcp\tests\e2e_tests\test_navigation_about_section_e2e.py [assertion]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_navigation_about_section_e2e.py>
+            name: @py_builtins
+            obj: <module 'builtins' (built-in)>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_navigation_about_section_e2e.py>
+            name: @pytest_ar
+            obj: <module '_pytest.assertion.rewrite' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pytest\\assertion\\rewrite.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_navigation_about_section_e2e.py>
+            name: pytest
+            obj: <module 'pytest' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pytest\\__init__.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_navigation_about_section_e2e.py>
+            name: re
+            obj: <module 're' from 'C:\\Users\\yasni\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\re\\__init__.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_navigation_about_section_e2e.py>
+            name: expect
+            obj: <playwright.sync_api.Expect object at 0x000001F18EC60AD0>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_navigation_about_section_e2e.py>
+            name: HomePage
+            obj: <class 'pages.home_page.HomePage'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_navigation_about_section_e2e.py>
+            name: test_navigation_about_section_e2e
+            obj: <function test_navigation_about_section_e2e at 0x000001F18F2DD300>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x000001F18F28DA90>
+            pytest_make_parametrize_id [hook]
+                config: <_pytest.config.Config object at 0x000001F18C24BB60>
+                val: chromium
+                argname: browser_name
+            finish pytest_make_parametrize_id --> None [hook]
+          early skip of rewriting module: encodings.unicode_escape [assertion]
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function test_navigation_about_section_e2e[chromium]>] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/e2e_tests/test_navigation_about_section_e2e.py' lenresult=1 outcome='passed'> [hook]
+    genitems <Function test_navigation_about_section_e2e[chromium]> [collection]
+      pytest_itemcollected [hook]
+          item: <Function test_navigation_about_section_e2e[chromium]>
+      finish pytest_itemcollected --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/e2e_tests/test_navigation_about_section_e2e.py' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collection_modifyitems [hook]
+          session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          config: <_pytest.config.Config object at 0x000001F18C24BB60>
+          items: [<Function test_navigation_about_section_e2e[chromium]>]
+      finish pytest_collection_modifyitems --> [] [hook]
+      pytest_collection_finish [hook]
+          session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        pytest_report_collectionfinish [hook]
+            config: <_pytest.config.Config object at 0x000001F18C24BB60>
+            items: [<Function test_navigation_about_section_e2e[chromium]>]
+            start_path: C:\Users\yasni\PythonMcp
+            startdir: C:\Users\yasni\PythonMcp
+        finish pytest_report_collectionfinish --> [] [hook]
+      finish pytest_collection_finish --> [] [hook]
+    finish pytest_collection --> None [hook]
+    pytest_runtestloop [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=1>
+      pytest_runtest_protocol [hook]
+          item: <Function test_navigation_about_section_e2e[chromium]>
+          nextitem: None
+        pytest_runtest_logstart [hook]
+            nodeid: tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]
+            location: ('tests\\e2e_tests\\test_navigation_about_section_e2e.py', 5, 'test_navigation_about_section_e2e[chromium]')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function test_navigation_about_section_e2e[chromium]>
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='base_url' scope='session' baseid=''>
+              request: <SubRequest 'base_url' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> https://www.mwtestconsultancy.co.uk/ [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='_verify_url' scope='session' baseid=''>
+              request: <SubRequest '_verify_url' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> None [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='pytestconfig' scope='session' baseid=''>
+              request: <SubRequest 'pytestconfig' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <_pytest.config.Config object at 0x000001F18C24BB60> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='delete_output_dir' scope='session' baseid=''>
+              request: <SubRequest 'delete_output_dir' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> None [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='setup_logging' scope='session' baseid='tests'>
+              request: <SubRequest 'setup_logging' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> None [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='browser_type_launch_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_type_launch_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> [hook]
+              headless: False
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='playwright' scope='session' baseid=''>
+              request: <SubRequest 'playwright' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <playwright._impl._playwright.Playwright object at 0x000001F18F28F230> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='browser_name' scope='session' baseid=''>
+              request: <SubRequest 'browser_name' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> chromium [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='browser_type' scope='session' baseid=''>
+              request: <SubRequest 'browser_type' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <BrowserType name=chromium executable_path=C:\Users\yasni\AppData\Local\ms-playwright\chromium-1194\chrome-win\chrome.exe> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='connect_options' scope='session' baseid=''>
+              request: <SubRequest 'connect_options' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> None [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='launch_browser' scope='session' baseid=''>
+              request: <SubRequest 'launch_browser' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <function launch_browser.<locals>.launch at 0x000001F18F3A4360> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='browser' scope='session' baseid=''>
+              request: <SubRequest 'browser' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <Browser type=<BrowserType name=chromium executable_path=C:\Users\yasni\AppData\Local\ms-playwright\chromium-1194\chrome-win\chrome.exe> version=141.0.7390.37> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='device' scope='session' baseid=''>
+              request: <SubRequest 'device' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> None [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='_pw_artifacts_folder' scope='session' baseid=''>
+              request: <SubRequest '_pw_artifacts_folder' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <TemporaryDirectory 'C:\\Users\\yasni\\AppData\\Local\\Temp\\playwright-pytest-i20li_o6'> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> [hook]
+              base_url: https://www.mwtestconsultancy.co.uk/
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid='tests'>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> [hook]
+              base_url: https://www.mwtestconsultancy.co.uk/
+              viewport: {'width': 1920, 'height': 1080}
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='output_path' scope='function' baseid=''>
+              request: <SubRequest 'output_path' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> C:\Users\yasni\PythonMcp\test-results\tests-e2e-tests-test-navigation-about-section-e2e-py-test-navigation-about-section-e2e-chromium [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='_artifacts_recorder' scope='function' baseid=''>
+              request: <SubRequest '_artifacts_recorder' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <pytest_playwright.pytest_playwright.ArtifactsRecorder object at 0x000001F18F28D550> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='new_context' scope='function' baseid=''>
+              request: <SubRequest 'new_context' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <function new_context.<locals>._new_context at 0x000001F18F3A76A0> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='context' scope='function' baseid=''>
+              request: <SubRequest 'context' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <BrowserContext browser=<Browser type=<BrowserType name=chromium executable_path=C:\Users\yasni\AppData\Local\ms-playwright\chromium-1194\chrome-win\chrome.exe> version=141.0.7390.37>> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='page' scope='function' baseid=''>
+              request: <SubRequest 'page' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_setup --> <Page url='about:blank'> [hook]
+        finish pytest_runtest_setup --> None [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_navigation_about_section_e2e[chromium]>
+            call: <CallInfo when='setup' result: None>
+        finish pytest_runtest_makereport --> <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='setup' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001F18C24BB60>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function test_navigation_about_section_e2e[chromium]>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function test_navigation_about_section_e2e[chromium]>
+        pytest_runtest_makereport [hook]
+            item: <Function test_navigation_about_section_e2e[chromium]>
+            call: <CallInfo when='call' excinfo=<ExceptionInfo TimeoutError('Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role("link", name=re.compile(r"^About$", re.IGNORECASE)).first\n') tblen=35>>
+        finish pytest_runtest_makereport --> <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='call' outcome='failed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='call' outcome='failed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='call' outcome='failed'>
+              config: <_pytest.config.Config object at 0x000001F18C24BB60>
+          finish pytest_report_teststatus --> ('failed', 'F', 'FAILED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_exception_interact [hook]
+            node: <Function test_navigation_about_section_e2e[chromium]>
+            call: <CallInfo when='call' excinfo=<ExceptionInfo TimeoutError('Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role("link", name=re.compile(r"^About$", re.IGNORECASE)).first\n') tblen=35>>
+            report: <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='call' outcome='failed'>
+        finish pytest_exception_interact --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function test_navigation_about_section_e2e[chromium]>
+            nextitem: None
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='page' scope='function' baseid=''>
+              request: <SubRequest 'page' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='page' scope='function' baseid=''>
+              request: <SubRequest 'page' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='context' scope='function' baseid=''>
+              request: <SubRequest 'context' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='context' scope='function' baseid=''>
+              request: <SubRequest 'context' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='new_context' scope='function' baseid=''>
+              request: <SubRequest 'new_context' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='new_context' scope='function' baseid=''>
+              request: <SubRequest 'new_context' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='_artifacts_recorder' scope='function' baseid=''>
+              request: <SubRequest '_artifacts_recorder' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='_artifacts_recorder' scope='function' baseid=''>
+              request: <SubRequest '_artifacts_recorder' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='output_path' scope='function' baseid=''>
+              request: <SubRequest 'output_path' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='new_context' scope='function' baseid=''>
+              request: <SubRequest 'new_context' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid='tests'>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid='tests'>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='_artifacts_recorder' scope='function' baseid=''>
+              request: <SubRequest '_artifacts_recorder' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='_pw_artifacts_folder' scope='session' baseid=''>
+              request: <SubRequest '_pw_artifacts_folder' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='device' scope='session' baseid=''>
+              request: <SubRequest 'device' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='new_context' scope='function' baseid=''>
+              request: <SubRequest 'new_context' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser' scope='session' baseid=''>
+              request: <SubRequest 'browser' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser' scope='session' baseid=''>
+              request: <SubRequest 'browser' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='launch_browser' scope='session' baseid=''>
+              request: <SubRequest 'launch_browser' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='launch_browser' scope='session' baseid=''>
+              request: <SubRequest 'launch_browser' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='connect_options' scope='session' baseid=''>
+              request: <SubRequest 'connect_options' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='launch_browser' scope='session' baseid=''>
+              request: <SubRequest 'launch_browser' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_type' scope='session' baseid=''>
+              request: <SubRequest 'browser_type' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_type' scope='session' baseid=''>
+              request: <SubRequest 'browser_type' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_name' scope='session' baseid=''>
+              request: <SubRequest 'browser_name' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='_artifacts_recorder' scope='function' baseid=''>
+              request: <SubRequest '_artifacts_recorder' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_type' scope='session' baseid=''>
+              request: <SubRequest 'browser_type' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='playwright' scope='session' baseid=''>
+              request: <SubRequest 'playwright' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='launch_browser' scope='session' baseid=''>
+              request: <SubRequest 'launch_browser' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_type_launch_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_type_launch_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='setup_logging' scope='session' baseid='tests'>
+              request: <SubRequest 'setup_logging' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='delete_output_dir' scope='session' baseid=''>
+              request: <SubRequest 'delete_output_dir' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='_artifacts_recorder' scope='function' baseid=''>
+              request: <SubRequest '_artifacts_recorder' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='output_path' scope='function' baseid=''>
+              request: <SubRequest 'output_path' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='device' scope='session' baseid=''>
+              request: <SubRequest 'device' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_type_launch_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_type_launch_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='delete_output_dir' scope='session' baseid=''>
+              request: <SubRequest 'delete_output_dir' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='pytestconfig' scope='session' baseid=''>
+              request: <SubRequest 'pytestconfig' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='_verify_url' scope='session' baseid=''>
+              request: <SubRequest '_verify_url' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='browser_context_args' scope='session' baseid=''>
+              request: <SubRequest 'browser_context_args' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='_verify_url' scope='session' baseid=''>
+              request: <SubRequest '_verify_url' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='base_url' scope='session' baseid=''>
+              request: <SubRequest 'base_url' for <Function test_navigation_about_section_e2e[chromium]>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+        finish pytest_runtest_teardown --> None [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_navigation_about_section_e2e[chromium]>
+            call: <CallInfo when='teardown' result: None>
+        finish pytest_runtest_makereport --> <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='teardown' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001F18C24BB60>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]
+            location: ('tests\\e2e_tests\\test_navigation_about_section_e2e.py', 5, 'test_navigation_about_section_e2e[chromium]')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+    finish pytest_runtestloop --> True [hook]
+    pytest_sessionfinish [hook]
+        session: <Session  exitstatus=<ExitCode.TESTS_FAILED: 1> testsfailed=1 testscollected=1>
+        exitstatus: 1
+      pytest_terminal_summary [hook]
+          terminalreporter: <_pytest.terminal.TerminalReporter object at 0x000001F18F1FDD30>
+          exitstatus: 1
+          config: <_pytest.config.Config object at 0x000001F18C24BB60>
+        pytest_report_teststatus [hook]
+            report: <TestReport 'tests/e2e_tests/test_navigation_about_section_e2e.py::test_navigation_about_section_e2e[chromium]' when='call' outcome='failed'>
+            config: <_pytest.config.Config object at 0x000001F18C24BB60>
+        finish pytest_report_teststatus --> ('failed', 'F', 'FAILED') [hook]
+      finish pytest_terminal_summary --> [] [hook]
+    finish pytest_sessionfinish --> [] [hook]
+    pytest_unconfigure [hook]
+        config: <_pytest.config.Config object at 0x000001F18C24BB60>
+    finish pytest_unconfigure --> [] [hook]
