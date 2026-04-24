@@ -1,4 +1,3 @@
-yaml
 name: "Copilot Setup Steps"
 
 on:
@@ -30,3 +29,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install playwright pytest
           playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: pytest PythonMCPplaywright.py
