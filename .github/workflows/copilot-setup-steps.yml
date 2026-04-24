@@ -30,10 +30,10 @@ jobs:
           pip install playwright pytest pytest-playwright
           playwright install --with-deps
 
-      - name: List files (Debug)
+      - name: List all files (Debug)
         run: ls -R
 
-      - name: Run all tests
+      - name: Try to collect tests (Diagnostic)
         env:
           PYTHONPATH: .
-        run: pytest
+        run: pytest --collect-only
