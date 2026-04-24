@@ -30,5 +30,5 @@ jobs:
           pip install playwright pytest pytest-playwright
           playwright install --with-deps
 
-      - name: Run Playwright tests
-        run: pytest PythonMCPplaywright.py
+      - name: Run all tests (UI,e2e and API)
+        run: pytest tests/
