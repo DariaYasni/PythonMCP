@@ -1,3 +1,4 @@
+
 name: UI and API Tests
 
 on:
@@ -5,6 +6,11 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   test:
