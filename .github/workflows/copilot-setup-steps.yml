@@ -1,39 +1,70 @@
-name: "Copilot Setup Steps"
+name: UI and API Tests
 
 on:
-  workflow_dispatch:
   push:
-    paths:
-      - .github/workflows/copilot-setup-steps.yml
+    branches: [ main, master ]
   pull_request:
-    paths:
-      - .github/workflows/copilot-setup-steps.yml
+    branches: [ main, master ]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  copilot-setup-steps:
+  test:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip' # Ускоряет установку библиотек при повторных запусках
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install playwright pytest pytest-playwright
-          playwright install --with-deps
+          pip install -r requirements.txt
 
-      - name: List all files (Debug)
-        run: ls -R
+      - name: Install Playwright Browsers
+        # Используем встроенную команду playwright для установки бинарников
+        # Флаг --with-deps установит системные библиотеки Linux (libgbm, libasound2 и др.)
+        run: playwright install --with-deps
 
-      - name: Try to collect tests (Diagnostic)
+      - name: Run Tests
+        # Добавляем переменные, если они нужны для pytest-base-url или dotenv
         env:
-          PYTHONPATH: .
-        run: pytest --collect-only
+          BASE_URL: ${{ secrets.BASE_URL }}
+        # --headless: запуск без окна (обязательно для CI)
+        # --alluredir: папка для отчетов
+        run: pytest --headless --alluredir=allure-results
+        continue-on-error: true
+
+      - name: Get Allure history
+        uses: actions/checkout@v4
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report Action
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 20
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-history
+          publish_branch: gh-pages
+
