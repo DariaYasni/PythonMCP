@@ -23,6 +23,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip' # Кэширование ускорит последующие запуски
 
       - name: Install dependencies
         run: |
@@ -30,10 +31,12 @@ jobs:
           pip install -r requirements.txt
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        # Используем python -m для надежной привязки к библиотеке
+        run: python -m playwright install --with-deps
 
       - name: Run Tests
-        run: pytest --alluredir=allure-results
+        # Запуск модуля через python -m решает проблему с "unrecognized arguments"
+        run: python -m pytest --alluredir=allure-results
         continue-on-error: true
 
       - name: Get Allure history
@@ -59,3 +62,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-history
           publish_branch: gh-pages
+
+
