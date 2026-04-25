@@ -23,25 +23,24 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip' # Ускоряет установку библиотек при повторных запусках
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          # Устанавливаем зависимости из вашего файла
           pip install -r requirements.txt
+          # Явно доустанавливаем плагин, чтобы исключить ошибку со скриншота
+          pip install pytest-playwright
 
       - name: Install Playwright Browsers
-        # Используем встроенную команду playwright для установки бинарников
-        # Флаг --with-deps установит системные библиотеки Linux (libgbm, libasound2 и др.)
+        # Команда install --with-deps обязательна для Ubuntu
         run: playwright install --with-deps
 
       - name: Run Tests
-        # Добавляем переменные, если они нужны для pytest-base-url или dotenv
-        env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-        # --headless: запуск без окна (обязательно для CI)
-        # --alluredir: папка для отчетов
-        run: pytest --headless --alluredir=allure-results
+        # 1. Мы убрали --headless (в CI плагин сам включит этот режим)
+        # 2. Запускаем через 'python -m pytest', это надежнее в CI
+        run: python -m pytest --alluredir=allure-results
         continue-on-error: true
 
       - name: Get Allure history
@@ -67,4 +66,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-history
           publish_branch: gh-pages
-
