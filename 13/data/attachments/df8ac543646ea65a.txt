@@ -1,0 +1,3 @@
+INFO     pages.home_page:home_page.py:53 Открытие: https://mwtestconsultancy.co.uk
+INFO     pages.home_page:home_page.py:82 Открытие окна поиска...
+INFO     pages.home_page:home_page.py:98 URL не изменился автоматически или страница грузится долго.

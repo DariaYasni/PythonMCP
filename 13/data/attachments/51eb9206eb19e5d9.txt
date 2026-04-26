@@ -1,0 +1,2 @@
+INFO     pages.login_page:login_page.py:22 Переход на https://www.mwtestconsultancy.co.uk
+INFO     pages.login_page:login_page.py:35 Имитация логина для your@email.com
