@@ -1,0 +1,884 @@
+<!DOCTYPE html><html lang="en" class="has-dark-text"><head>
+
+    <title>MW Test Consultancy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" as="style" href="https://www.mwtestconsultancy.co.uk/assets/built/screen.css?v=873d18bcb6">
+    <link rel="preload" as="script" href="https://www.mwtestconsultancy.co.uk/assets/built/source.js?v=873d18bcb6">
+    
+    <link rel="preload" as="font" type="font/woff2" href="https://www.mwtestconsultancy.co.uk/assets/fonts/inter-roman.woff2?v=873d18bcb6" crossorigin="anonymous">
+<style>
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: optional;
+        src: url(https://www.mwtestconsultancy.co.uk/assets/fonts/inter-roman.woff2?v=873d18bcb6) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+
+    <link rel="stylesheet" type="text/css" href="https://www.mwtestconsultancy.co.uk/assets/built/screen.css?v=873d18bcb6">
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast has been taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+
+        if (accentColor.length === 3) {
+            accentColor = accentColor[0] + accentColor[0] + accentColor[1] + accentColor[1] + accentColor[2] + accentColor[2];
+        }
+
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <meta name="description" content="Quality, AI, Software Testing and Development Insights">
+    <link rel="canonical" href="https://www.mwtestconsultancy.co.uk/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="https://www.mwtestconsultancy.co.uk/page/2/">
+    
+    <meta property="og:site_name" content="MW Test Consultancy">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MW Test Consultancy">
+    <meta property="og:description" content="Quality, AI, Software Testing and Development Insights">
+    <meta property="og:url" content="https://www.mwtestconsultancy.co.uk/">
+    <meta property="og:image" content="https://static.ghost.org/v5.0.0/images/publication-cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MW Test Consultancy">
+    <meta name="twitter:description" content="Quality, AI, Software Testing and Development Insights">
+    <meta name="twitter:url" content="https://www.mwtestconsultancy.co.uk/">
+    <meta name="twitter:image" content="https://static.ghost.org/v5.0.0/images/publication-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="840">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "MW Test Consultancy",
+        "url": "https://www.mwtestconsultancy.co.uk/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.mwtestconsultancy.co.uk/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "url": "https://www.mwtestconsultancy.co.uk/",
+    "name": "MW Test Consultancy",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
+        "width": 1200,
+        "height": 840
+    },
+    "mainEntityOfPage": "https://www.mwtestconsultancy.co.uk/",
+    "description": "Quality, AI, Software Testing and Development Insights"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 6.34">
+    <link rel="alternate" type="application/rss+xml" title="MW Test Consultancy" href="https://www.mwtestconsultancy.co.uk/rss/">
+    <script defer="" src="https://cdn.jsdelivr.net/ghost/portal@~2.68/umd/portal.min.js" data-i18n="true" data-ghost="https://www.mwtestconsultancy.co.uk/" data-key="ab7da356547d4491bf7c73b544" data-api="https://mw-test-consultancy.ghost.io/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer="" src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/sodo-search.min.js" data-key="ab7da356547d4491bf7c73b544" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/main.css" data-sodo-search="https://mw-test-consultancy.ghost.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://www.mwtestconsultancy.co.uk/webmentions/receive/" rel="webmention">
+    <script defer="" src="/public/cards.min.js?v=873d18bcb6"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=873d18bcb6">
+    <script defer="" src="/public/comment-counts.min.js?v=873d18bcb6" data-ghost-comments-counts-api="https://www.mwtestconsultancy.co.uk/members/api/comments/counts/"></script>
+    <script defer="" src="/public/member-attribution.min.js?v=873d18bcb6"></script><style>:root {--ghost-accent-color: #1d69ff;}</style>
+    <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RZRZH7W633"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RZRZH7W633');
+</script>
+
+<style>.App{text-align:center}.App-logo{height:40vmin;pointer-events:none}@media (prefers-reduced-motion: no-preference){.App-logo{animation:App-logo-spin infinite 20s linear}}.App-header{background-color:#282c34;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:calc(10px + 2vmin);color:#fff}.App-link{color:#61dafb}@keyframes App-logo-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+/*$vite$:1*/</style></head>
+<body class="home-template has-sans-title has-sans-body">
+
+<div class="gh-viewport">
+    
+    <header id="gh-navigation" class="gh-navigation is-middle-logo gh-outer is-dropdown-loaded">
+    <div class="gh-navigation-inner gh-inner">
+
+        <div class="gh-navigation-brand">
+            <a class="gh-navigation-logo is-title" href="https://www.mwtestconsultancy.co.uk">
+                    MW Test Consultancy
+            </a>
+            <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search="">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>            <button class="gh-burger gh-icon-button" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>            </button>
+        </div>
+
+        <nav class="gh-navigation-menu">
+            <ul class="nav">
+    <li class="nav-home nav-current"><a href="https://www.mwtestconsultancy.co.uk/">Home</a></li>
+    <li class="nav-books"><a href="https://www.mwtestconsultancy.co.uk/books/">Books</a></li>
+    <li class="nav-tools"><a href="https://www.mwtestconsultancy.co.uk/tools/">Tools</a></li>
+</ul>
+
+        </nav>
+
+        <div class="gh-navigation-actions">
+                <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search="">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>                <div class="gh-navigation-members">
+                            <a href="#/portal/signin" data-portal="signin" class="gh-portal-close">Sign in</a>
+                                <a class="gh-button gh-portal-close" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                </div>
+        </div>
+
+    </div>
+</header>
+
+    
+
+        <section class="gh-header is-highlight has-image gh-outer">
+
+
+    <div class="gh-header-inner gh-inner">
+
+            <div class="gh-header-left">
+                    <article class="gh-card post tag-ai tag-strategy tag-tools tag-heuristics featured">
+    <a class="gh-card-link" href="/when-not-to-use-ai/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2025/05/when_not_to_use_ai.png 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2025/05/when_not_to_use_ai.png 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2025/05/when_not_to_use_ai.png 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2025/05/when_not_to_use_ai.png 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2025/05/when_not_to_use_ai.png 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2025/05/when_not_to_use_ai.png 2000w" sizes="(max-width: 767px) calc(100vw - max(8vmin, 40px)), 640px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2025/05/when_not_to_use_ai.png" alt="When not to use AI">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">AI</p>
+            <h3 class="gh-card-title is-title">When not to use AI</h3>
+                <p class="gh-card-excerpt is-body">Generative AI is a powerful tool—but only if you know when not to use it. In this post, we explore a simple model that helps you decide whether AI will boost your testing or lead you off track.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2025-05-28">28 May 2025</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+            </div>
+            <div class="gh-header-middle">
+                    <article class="gh-card post tag-ai tag-analysis tag-pairing tag-collaboration tag-shift-left">
+    <a class="gh-card-link" href="/how-can-gen-ai-be-used-in-shift-left-activities/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2025/04/ChatGPT-Image-Apr-1--2025--08_05_27-PM.png 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2025/04/ChatGPT-Image-Apr-1--2025--08_05_27-PM.png 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2025/04/ChatGPT-Image-Apr-1--2025--08_05_27-PM.png 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2025/04/ChatGPT-Image-Apr-1--2025--08_05_27-PM.png 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2025/04/ChatGPT-Image-Apr-1--2025--08_05_27-PM.png 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2025/04/ChatGPT-Image-Apr-1--2025--08_05_27-PM.png 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2025/04/ChatGPT-Image-Apr-1--2025--08_05_27-PM.png" alt="How Can Gen AI Be Used In Shift Left Activities?">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">AI</p>
+            <h3 class="gh-card-title is-title">How Can Gen AI Be Used In Shift Left Activities?</h3>
+                <p class="gh-card-excerpt is-body">Learn how AI can help improve our understanding of features and our ability to slice work into manageable chunks.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2025-04-02">02 Apr 2025</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    <article class="gh-card post tag-ai tag-models tag-book">
+    <a class="gh-card-link" href="/the-ai-area-of-effect-model/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2025/02/Area-of-effect---V2.drawio-2.png 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2025/02/Area-of-effect---V2.drawio-2.png 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2025/02/Area-of-effect---V2.drawio-2.png 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2025/02/Area-of-effect---V2.drawio-2.png 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2025/02/Area-of-effect---V2.drawio-2.png 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2025/02/Area-of-effect---V2.drawio-2.png 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2025/02/Area-of-effect---V2.drawio-2.png" alt="The AI Area of Effect Model">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">AI</p>
+            <h3 class="gh-card-title is-title">The AI Area of Effect Model</h3>
+                <p class="gh-card-excerpt is-body">The AI area of effect model describes the relationship between us and AI. Learn how it has recently been improved.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2025-02-12">12 Feb 2025</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    <article class="gh-card post tag-ai tag-book">
+    <a class="gh-card-link" href="/announcing-software-testing-with-generative-ai-now-in-print-with-a-special-45-off/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/11/software-testing-with-generative-ai-cover-2-1.png 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/11/software-testing-with-generative-ai-cover-2-1.png 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/11/software-testing-with-generative-ai-cover-2-1.png 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/11/software-testing-with-generative-ai-cover-2-1.png 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/11/software-testing-with-generative-ai-cover-2-1.png 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/11/software-testing-with-generative-ai-cover-2-1.png 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/11/software-testing-with-generative-ai-cover-2-1.png" alt="Announcing Software Testing with Generative AI">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">AI</p>
+            <h3 class="gh-card-title is-title">Announcing Software Testing with Generative AI</h3>
+                <p class="gh-card-excerpt is-body">Now in Print with a Special 45% Off!</p>
+            <footer class="gh-card-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20" width="20" id="Lock-1--Streamline-Ultimate"><defs></defs><title>lock-1</title><path d="M4.375 8.125h11.25s1.25 0 1.25 1.25v8.75s0 1.25 -1.25 1.25H4.375s-1.25 0 -1.25 -1.25v-8.75s0 -1.25 1.25 -1.25" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M5.625 8.125V5a4.375 4.375 0 0 1 8.75 0v3.125" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="m10 12.5 0 2.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>                <!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2024-11-04">04 Nov 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+            </div>
+            <div class="gh-header-right">
+                    <div class="gh-featured-feed">
+                            <article class="gh-card post tag-ai tag-llms tag-learning tag-tools">
+    <a class="gh-card-link" href="/how-do-i-become-competitive-with-generate-ai-as-a-tester/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/10/laboratory-8903102_1920.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/10/laboratory-8903102_1920.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/10/laboratory-8903102_1920.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/10/laboratory-8903102_1920.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/10/laboratory-8903102_1920.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/10/laboratory-8903102_1920.jpg 2000w" sizes="80px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/10/laboratory-8903102_1920.jpg" alt="How do I become competitive with Generate AI as a tester?">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">AI</p>
+            <h3 class="gh-card-title is-title">How do I become competitive with Generate AI as a tester?</h3>
+                <p class="gh-card-excerpt is-body">Mindset and experimentation is the key to success with AI</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2024-10-03">03 Oct 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-ai tag-skills tag-experience tag-genai tag-llms">
+    <a class="gh-card-link" href="/how-can-manual-testers-take-advantage-of-llm-adoption-in-testing/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/09/technical-8792188_1920.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/09/technical-8792188_1920.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/09/technical-8792188_1920.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/09/technical-8792188_1920.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/09/technical-8792188_1920.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/09/technical-8792188_1920.jpg 2000w" sizes="80px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/09/technical-8792188_1920.jpg" alt="How can manual testers take advantage of LLM adoption in testing?">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">AI</p>
+            <h3 class="gh-card-title is-title">How can manual testers take advantage of LLM adoption in testing?</h3>
+                <p class="gh-card-excerpt is-body">Just because you're 'not technical' doesn't mean you can't benefit from LLMs</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2024-09-24">24 Sep 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-ai tag-models tag-quality">
+    <a class="gh-card-link" href="/analysing-the-impact-of-generative-ai-using-the-laws-of-media/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/08/ai-generated-8145416_1920-1.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/08/ai-generated-8145416_1920-1.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/08/ai-generated-8145416_1920-1.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/08/ai-generated-8145416_1920-1.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/08/ai-generated-8145416_1920-1.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/08/ai-generated-8145416_1920-1.jpg 2000w" sizes="80px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/08/ai-generated-8145416_1920-1.jpg" alt="Analysing the impact of generative AI using the Laws of Media">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">AI</p>
+            <h3 class="gh-card-title is-title">Analysing the impact of generative AI using the Laws of Media</h3>
+                <p class="gh-card-excerpt is-body">How can a mental model from the 70s help us to evaluate the impact of generative AI?</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2024-08-19">19 Aug 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-ai tag-quality tag-engineering">
+    <a class="gh-card-link" href="/quality-engineering-digital-employees-and-job-security/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/07/post-impressionist-1428139_1920.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/07/post-impressionist-1428139_1920.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/07/post-impressionist-1428139_1920.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/07/post-impressionist-1428139_1920.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/07/post-impressionist-1428139_1920.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/07/post-impressionist-1428139_1920.jpg 2000w" sizes="80px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/07/post-impressionist-1428139_1920.jpg" alt="Quality Engineering, Digital Employees and Job Security">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">AI</p>
+            <h3 class="gh-card-title is-title">Quality Engineering, Digital Employees and Job Security</h3>
+                <p class="gh-card-excerpt is-body">Is Generative AI going to take our jobs?</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2024-07-24">24 Jul 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-ai tag-quality tag-llms tag-prompt-engineering tag-machine-learning tag-testing">
+    <a class="gh-card-link" href="/5-lessons-i-learnt-during-an-ai-hackathon/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/07/developer-8764526_1280-1.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/07/developer-8764526_1280-1.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/07/developer-8764526_1280-1.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/07/developer-8764526_1280-1.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/07/developer-8764526_1280-1.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/07/developer-8764526_1280-1.jpg 2000w" sizes="80px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/07/developer-8764526_1280-1.jpg" alt="5 lessons I learnt during an AI hackathon">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">AI</p>
+            <h3 class="gh-card-title is-title">5 lessons I learnt during an AI hackathon</h3>
+                <p class="gh-card-excerpt is-body">What's it like to be a quality engineer on a team developing an AI product?</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2024-07-02">02 Jul 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-strategy tag-api-testing tag-writing tag-book">
+    <a class="gh-card-link" href="/testing-web-apis/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/strategy.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/strategy.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/strategy.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/strategy.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/strategy.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/strategy.jpg 2000w" sizes="80px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/strategy.jpg" alt="Testing Web APIs “The book&quot;">
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">strategy</p>
+            <h3 class="gh-card-title is-title">Testing Web APIs “The book"</h3>
+                <p class="gh-card-excerpt is-body">I'm proud to announce the launch of my debut book, Testing Web APIs</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2019-01-31">31 Jan 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    </div>
+            </div>
+
+
+
+
+    </div>
+
+</section>
+
+
+            <section class="gh-cta gh-outer">
+                <div class="gh-cta-inner gh-inner">
+                    <div class="gh-cta-content">
+                        <h2 class="gh-cta-title is-title">
+                            MW Test Consultancy
+                        </h2>
+                        <p class="gh-cta-description is-body">
+                            Quality, AI, Software Testing and Development Insights
+                        </p>
+                    </div>
+                    <form class="gh-form" data-members-form="">
+    <input class="gh-form-input" id="cta-email" name="email" type="email" placeholder="jamie@example.com" required="" data-members-email="" style="">
+    <button class="gh-button" type="submit" aria-label="Subscribe">
+        <span><span>Subscribe</span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></span>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+    <g stroke-linecap="round" stroke-width="2" fill="currentColor" stroke="none" stroke-linejoin="round" class="nc-icon-wrapper">
+        <g class="nc-loop-dots-4-24-icon-o">
+            <circle cx="4" cy="12" r="3"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <circle cx="20" cy="12" r="3"></circle>
+        </g>
+        <style data-cap="butt">
+            .nc-loop-dots-4-24-icon-o{--animation-duration:0.8s}
+            .nc-loop-dots-4-24-icon-o *{opacity:.4;transform:scale(.75);animation:nc-loop-dots-4-anim var(--animation-duration) infinite}
+            .nc-loop-dots-4-24-icon-o :nth-child(1){transform-origin:4px 12px;animation-delay:-.3s;animation-delay:calc(var(--animation-duration)/-2.666)}
+            .nc-loop-dots-4-24-icon-o :nth-child(2){transform-origin:12px 12px;animation-delay:-.15s;animation-delay:calc(var(--animation-duration)/-5.333)}
+            .nc-loop-dots-4-24-icon-o :nth-child(3){transform-origin:20px 12px}
+            @keyframes nc-loop-dots-4-anim{0%,100%{opacity:.4;transform:scale(.75)}50%{opacity:1;transform:scale(1)}}
+        </style>
+    </g>
+</svg>        <span>Email sent</span>
+    </button>
+    <p data-members-error=""></p>
+</form>
+                </div>
+            </section>
+
+
+<section class="gh-container is-list gh-outer">
+    <div class="gh-container-inner gh-inner">
+        
+            <h2 class="gh-container-title">
+                Latest
+            </h2>
+
+        <main class="gh-main">
+            <div class="gh-feed">
+
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/the-test-automation-pyramid-is-a-heuristic-not-a-strategy/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/pyramids.png 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/pyramids.png 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/pyramids.png 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/pyramids.png 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/pyramids.png 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/pyramids.png 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/pyramids.png" alt="The test automation pyramid is a heuristic not a strategy" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">The test automation pyramid is a heuristic not a strategy</h3>
+                <p class="gh-card-excerpt is-body">The Automation pyramid does have value, but not in the way teams typically use it.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2019-01-31">31 Jan 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/debug-api-check-proxy-tools/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/police.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/police.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/police.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/police.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/police.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/police.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/police.jpg" alt="Debug API checks quickly with proxy tools" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Debug API checks quickly with proxy tools</h3>
+                <p class="gh-card-excerpt is-body">Learn how to use web proxy tools to diagnose issues with your automated API checks.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2017-09-28">28 Sep 2017</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/code-coverage/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/whackamole.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/whackamole.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/whackamole.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/whackamole.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/whackamole.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/whackamole.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/whackamole.jpg" alt="Code coverage and automated checks: Is 100% coverage enough?" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Code coverage and automated checks: Is 100% coverage enough?</h3>
+                <p class="gh-card-excerpt is-body">Code coverage doesn't mean risk coverage...</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2017-08-21">21 Aug 2017</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/api-testing-demo/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/tubemap.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/tubemap.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/tubemap.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/tubemap.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/tubemap.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/tubemap.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/tubemap.jpg" alt="Restful-Booker: Your one stop API testing demo" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Restful-Booker: Your one stop API testing demo</h3>
+                <p class="gh-card-excerpt is-body">You get an API testing demo, you get an API testing demo, everybody gets an API testing demo!</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2017-08-18">18 Aug 2017</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/api-monitoring-tool-simple/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/heartbeat.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/heartbeat.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/heartbeat.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/heartbeat.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/heartbeat.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/heartbeat.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/heartbeat.jpg" alt="Unexpected Automation: Create a simple API monitoring tool in 5 steps" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Unexpected Automation: Create a simple API monitoring tool in 5 steps</h3>
+                <p class="gh-card-excerpt is-body">Build a simple monitor tool for your testing needs in minutes</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2017-05-09">09 May 2017</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/api-test-framework/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/steelwork-1.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/steelwork-1.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/steelwork-1.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/steelwork-1.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/steelwork-1.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/steelwork-1.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/steelwork-1.jpg" alt="API test framework templates - A quick start repository" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">API test framework templates - A quick start repository</h3>
+                <p class="gh-card-excerpt is-body">Want to get started with a new API checking framework? Look no further...</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2017-01-17">17 Jan 2017</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/copying-http-requests-dev-tools-postman/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/photocopy.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/photocopy.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/photocopy.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/photocopy.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/photocopy.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/photocopy.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/photocopy.jpg" alt="Quick copying HTTP requests from Developer tools to Postman" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Quick copying HTTP requests from Developer tools to Postman</h3>
+                <p class="gh-card-excerpt is-body">Learn how to copy a request from your browser and get it into Postman, fast.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2017-01-11">11 Jan 2017</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/data-driven-testing-gherkin-api/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/cucumbers.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/cucumbers.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/cucumbers.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/cucumbers.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/cucumbers.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/cucumbers.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/cucumbers.jpg" alt="Data driven testing: Moving your Gherkin scenarios to API" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Data driven testing: Moving your Gherkin scenarios to API</h3>
+                <p class="gh-card-excerpt is-body">Don't drive your data testing via the UI when you can do it via your API</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2017-01-04">04 Jan 2017</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/bdd-testing-part-4/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/bdd.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/bdd.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/bdd.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/bdd.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/bdd.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/bdd.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/bdd.jpg" alt="Is BDD testing? Answers and test strategy" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Is BDD testing? Answers and test strategy</h3>
+                <p class="gh-card-excerpt is-body">The conclusion to the is BDD testing series. Where we finally get some answers!</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2016-12-23">23 Dec 2016</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/bdd-testing-part-3/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/bdd-1.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/bdd-1.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/bdd-1.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/bdd-1.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/bdd-1.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/bdd-1.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/bdd-1.jpg" alt="Is BDD testing? Outside in development and testers" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Is BDD testing? Outside in development and testers</h3>
+                <p class="gh-card-excerpt is-body">In this post we explore the use of test automation tools within BDD</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2016-12-13">13 Dec 2016</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/bdd-testing-part-2/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/bdd-2.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/bdd-2.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/bdd-2.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/bdd-2.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/bdd-2.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/bdd-2.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/bdd-2.jpg" alt="Is BDD Testing? Collaboration and testers" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Is BDD Testing? Collaboration and testers</h3>
+                <p class="gh-card-excerpt is-body">We continue our exploration into the core of BDD which is conversations and collaboration</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2016-12-09">09 Dec 2016</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="/bdd-testing-part-1/">
+            <figure class="gh-card-image">
+                <img srcset="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w160/format/webp/2024/06/bdd-3.jpg 160w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w320/format/webp/2024/06/bdd-3.jpg 320w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/format/webp/2024/06/bdd-3.jpg 600w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w960/format/webp/2024/06/bdd-3.jpg 960w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w1200/format/webp/2024/06/bdd-3.jpg 1200w,
+                            https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w2000/format/webp/2024/06/bdd-3.jpg 2000w" sizes="320px" src="https://storage.ghost.io/c/0d/23/0d232689-1f7c-40f6-82ad-76ff5628cfdb/content/images/size/w600/2024/06/bdd-3.jpg" alt="Is BDD Testing? A model for testers" loading="lazy">
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Is BDD Testing? A model for testers</h3>
+                <p class="gh-card-excerpt is-body">Is BDD testing?  No. Well, some of the activities involve Testers, but it's not REAL testing, right? 
+
+Look! It's complicated!</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Mark Winteringham</span>
+                    <time class="gh-card-date" datetime="2016-12-04">04 Dec 2016</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+
+
+
+            </div>
+
+                <div class="gh-more is-title">
+                    <a href="https://www.mwtestconsultancy.co.uk/page/2/">See all <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></a>
+                </div>
+        </main>
+
+
+    </div>
+</section>
+
+    
+    <footer class="gh-footer gh-outer">
+    <div class="gh-footer-inner gh-inner">
+
+        <div class="gh-footer-bar">
+            <span class="gh-footer-logo is-title">
+                    MW Test Consultancy
+            </span>
+            <nav class="gh-footer-menu">
+                <ul class="nav">
+    <li class="nav-sign-up nav-current"><a href="#/portal/">Sign up</a></li>
+</ul>
+
+            </nav>
+            <div class="gh-footer-copyright">
+                Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+            </div>
+        </div>
+
+                <section class="gh-footer-signup">
+                    <h2 class="gh-footer-signup-header is-title">
+                        MW Test Consultancy
+                    </h2>
+                    <p class="gh-footer-signup-subhead is-body">
+                        Quality, AI, Software Testing and Development Insights
+                    </p>
+                    <form class="gh-form" data-members-form="">
+    <input class="gh-form-input" id="footer-email" name="email" type="email" placeholder="jamie@example.com" required="" data-members-email="" style="">
+    <button class="gh-button" type="submit" aria-label="Subscribe">
+        <span><span>Subscribe</span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></span>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+    <g stroke-linecap="round" stroke-width="2" fill="currentColor" stroke="none" stroke-linejoin="round" class="nc-icon-wrapper">
+        <g class="nc-loop-dots-4-24-icon-o">
+            <circle cx="4" cy="12" r="3"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <circle cx="20" cy="12" r="3"></circle>
+        </g>
+        <style data-cap="butt">
+            .nc-loop-dots-4-24-icon-o{--animation-duration:0.8s}
+            .nc-loop-dots-4-24-icon-o *{opacity:.4;transform:scale(.75);animation:nc-loop-dots-4-anim var(--animation-duration) infinite}
+            .nc-loop-dots-4-24-icon-o :nth-child(1){transform-origin:4px 12px;animation-delay:-.3s;animation-delay:calc(var(--animation-duration)/-2.666)}
+            .nc-loop-dots-4-24-icon-o :nth-child(2){transform-origin:12px 12px;animation-delay:-.15s;animation-delay:calc(var(--animation-duration)/-5.333)}
+            .nc-loop-dots-4-24-icon-o :nth-child(3){transform-origin:20px 12px}
+            @keyframes nc-loop-dots-4-anim{0%,100%{opacity:.4;transform:scale(.75)}50%{opacity:1;transform:scale(1)}}
+        </style>
+    </g>
+</svg>        <span>Email sent</span>
+    </button>
+    <p data-members-error=""></p>
+</form>
+                </section>
+
+    </div>
+</footer>    
+</div>
+
+
+<script src="https://www.mwtestconsultancy.co.uk/assets/built/source.js?v=873d18bcb6"></script>
+
+
+
+
+
+<div id="ghost-portal-root" data-testid="portal-root"><iframe srcdoc="&lt;!DOCTYPE html&gt;" data-testid="portal-trigger-frame" title="portal-trigger" frameborder="0" dir="ltr" class="gh-portal-triggerbtn-iframe" style="z-index: 3999998; position: fixed; bottom: 0px; right: 0px; width: 183px; max-width: 500px; height: 98px; animation: 250ms ease 0s 1 normal none running animation-bhegco; transition: opacity 0.3s; overflow: hidden;"></iframe></div><div id="sodo-search-root"></div></body></html>
