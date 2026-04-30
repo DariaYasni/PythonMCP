@@ -1,0 +1,1 @@
+INFO     test_api:test_api.py:27 API Response time: 622.48ms
