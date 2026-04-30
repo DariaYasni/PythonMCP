@@ -1,0 +1,5 @@
+
+Начальный URL: https://www.mwtestconsultancy.co.uk/
+Найдено пунктов меню: 4
+Кликаем по пункту меню: Books
+✓ Успешный переход! Новый URL: https://www.mwtestconsultancy.co.uk/books/
