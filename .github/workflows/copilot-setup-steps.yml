@@ -62,17 +62,17 @@ jobs:
           publish_dir: allure-history
           publish_branch: gh-pages
 
-           - name: Upload Allure Results
+      - name: Upload Allure Results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: allure-results
           retention-days: 7
 
-      # --- НОВЫЙ ШАГ: УВЕДОМЛЕНИЕ В SLACK ---
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
-        if: always() # Уведомление придет даже при падении тестов
+        if: always()
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_TITLE: 'Результаты прогона Playwright 🚀'
@@ -82,4 +82,3 @@ jobs:
             *Отчет:* https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
           SLACK_COLOR: ${{ job.status == 'success' && 'good' || 'danger' }}
           SLACK_ICON: https://playwright.dev
-          SLACK_FOOTER: 'GitHub Actions Pipeline'
