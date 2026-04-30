@@ -62,6 +62,13 @@ jobs:
           publish_dir: allure-history
           publish_branch: gh-pages
 
+           - name: Upload Allure Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
+          retention-days: 7
+
       # --- НОВЫЙ ШАГ: УВЕДОМЛЕНИЕ В SLACK ---
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
