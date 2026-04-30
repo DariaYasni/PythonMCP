@@ -28,18 +28,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # Устанавливаем зависимости из вашего файла
           pip install -r requirements.txt
-          # Явно доустанавливаем плагин, чтобы исключить ошибку со скриншота
           pip install pytest-playwright
 
       - name: Install Playwright Browsers
-        # Команда install --with-deps обязательна для Ubuntu
         run: playwright install --with-deps
 
       - name: Run Tests
-        # 1. Мы убрали --headless (в CI плагин сам включит этот режим)
-        # 2. Запускаем через 'python -m pytest', это надежнее в CI
         run: python -m pytest --alluredir=allure-results
         continue-on-error: true
 
@@ -66,3 +61,18 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-history
           publish_branch: gh-pages
+
+      # --- НОВЫЙ ШАГ: УВЕДОМЛЕНИЕ В SLACK ---
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        if: always() # Уведомление придет даже при падении тестов
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_TITLE: 'Результаты прогона Playwright 🚀'
+          SLACK_MESSAGE: |
+            *Статус:* ${{ job.status == 'success' && 'Успешно ✅' || 'Ошибка ❌' }}
+            *Автор:* ${{ github.actor }}
+            *Отчет:* https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          SLACK_COLOR: ${{ job.status == 'success' && 'good' || 'danger' }}
+          SLACK_ICON: https://playwright.dev
+          SLACK_FOOTER: 'GitHub Actions Pipeline'

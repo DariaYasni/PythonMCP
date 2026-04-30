@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Skipped tests",
+        "matchedStatuses": [
+            "skipped"
+        ]
+    },
+    {
+        "name": "Infrastructure issues (Timeouts)",
+        "matchedStatuses": [
+            "broken"
+        ],
+        "messageRegex": ".*timeout.*"
+    },
+    {
+        "name": "Product defects (Assertion errors)",
+        "matchedStatuses": [
+            "failed"
+        ],
+        "messageRegex": ".*AssertionError.*"
+    },
+    {
+        "name": "Test data issues",
+        "matchedStatuses": [
+            "broken"
+        ],
+        "messageRegex": ".*not found.*"
+    }
+]
