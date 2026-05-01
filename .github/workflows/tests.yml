@@ -1,4 +1,4 @@
-name: Selenium UI and API Tests
+name: Playwright UI and API Tests
 
 on:
   push:
