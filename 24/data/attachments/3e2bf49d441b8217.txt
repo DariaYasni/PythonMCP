@@ -1,0 +1,2 @@
+[32mINFO    [0m pages.home_page:home_page.py:53 Открытие: https://mwtestconsultancy.co.uk
+[32mINFO    [0m pages.home_page:home_page.py:67 Переход к разделу: Tools
