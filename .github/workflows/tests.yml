@@ -34,7 +34,7 @@ jobs:
         run: playwright install --with-deps
 
       - name: Run Tests
-        run: pytest --alluredir=allure-results
+        run: pytest -n auto --alluredir=allure-results
         continue-on-error: true
 
       - name: Upload Allure Results
