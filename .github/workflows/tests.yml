@@ -30,11 +30,29 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # --- БЛОК КЕШИРОВАНИЯ БРАУЗЕРОВ ---
+      - name: Get Playwright version
+        run: echo "PLAYWRIGHT_VERSION=$(pip show playwright | grep Version | cut -d ' ' -f 2)" >> $GITHUB_ENV
+
+      - name: Cache Playwright Browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ env.PLAYWRIGHT_VERSION }}
+
       - name: Install Playwright Browsers
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: playwright install --with-deps
+      
+      - name: Install Playwright dependencies (if cache hit)
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: playwright install-deps
+      # ---------------------------------
 
       - name: Run Tests
-        run: pytest --alluredir=allure-results
+        # Добавлен флаг -n auto для параллельного запуска
+        run: pytest -n auto --alluredir=allure-results
         continue-on-error: true
 
       - name: Upload Allure Results
@@ -75,7 +93,8 @@ jobs:
           keep_reports: 20
 
       - name: Deploy report to Github Pages
-        uses: peaceiris/actions-gh-pages@v3
+        # Обновлено до v4, чтобы убрать предупреждения Node.js
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-history
