@@ -35,7 +35,8 @@ jobs:
         run: playwright install --with-deps
 
       - name: Run Tests
-        run: python -m pytest --alluredir=allure-results
+        # Мы добавили -n 3 для параллельности и --reruns 2 для стабильности
+        run: pytest -n 3 --dist loadscope --reruns 2 --alluredir=allure-results
         continue-on-error: true
 
       - name: Get Allure history
