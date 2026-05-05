@@ -1,0 +1,2 @@
+[32mINFO    [0m pages.login_page:login_page.py:22 Переход на https://www.mwtestconsultancy.co.uk
+[32mINFO    [0m pages.login_page:login_page.py:35 Имитация логина для test@example.com
