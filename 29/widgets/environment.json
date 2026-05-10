@@ -1,1 +1,1 @@
-[{"values":["MyProject"],"name":"Project"},{"values":["Chromium"],"name":"Browser"},{"values":["https://mwtestconsultancy.co.uk"],"name":"URL"}]
+[{"values":["MW_Test_Consultancy"],"name":"Project"},{"values":["https://mwtestconsultancy.co.uk"],"name":"UI_URL"},{"values":["https://restful-booker.herokuapp.com"],"name":"API_URL"},{"values":["Chromium"],"name":"Browser"}]

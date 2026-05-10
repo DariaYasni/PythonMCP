@@ -1,0 +1,4 @@
+INFO     pages.home_page:home_page.py:42 Открытие: https://mwtestconsultancy.co.uk
+INFO     pages.home_page:home_page.py:48 Переход к разделу: Books
+INFO     test_e2e_flow:test_e2e_flow.py:21 Успешно перешли на: https://www.mwtestconsultancy.co.uk/books/
+INFO     test_e2e_flow:test_e2e_flow.py:38 Поиск успешно отработал. Текущий URL: https://www.mwtestconsultancy.co.uk/
