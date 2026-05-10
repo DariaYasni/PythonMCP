@@ -3,12 +3,13 @@ import re  # <--- ДОБАВИЛИ ИМПОРТ
 from playwright.sync_api import Page, expect
 from pages.home_page import HomePage
 
+
 # 1. Создаем расширенный класс прямо здесь
 class SearchPage(HomePage):
     def __init__(self, page: Page):
         super().__init__(page)
         # Указываем прямой путь к поиску, чтобы избежать проблем с iframe
-        self.search_url = "https://mwtestconsultancy.co.uk" 
+        self.search_url = "https://mwtestconsultancy.co.uk"
         self.search_input = page.locator("input").first
         # Берем первый заголовок или ссылку в результатах
         self.results = page.locator("h3, .gh-search-details-content").first
@@ -19,10 +20,11 @@ class SearchPage(HomePage):
     def search_for(self, query: str):
         self.search_input.wait_for(state="visible", timeout=10000)
         self.search_input.fill(query)
-        self.page.wait_for_timeout(2000) # Ждем подгрузку результатов
+        self.page.wait_for_timeout(2000)  # Ждем подгрузку результатов
 
     def select_first_result(self):
         self.results.click()
+
 
 # 2. Сам тест в стиле POM
 def test_independent_flow(page: Page):
@@ -40,5 +42,5 @@ def test_independent_flow(page: Page):
     # Шаг 4: Проверка
     # Проверяем, что URL изменился (ушли со страницы поиска)
     expect(page).not_to_have_url(re.compile(r".*search.*"), timeout=15000)
-    
+
     print(f"✓ Успех! Тест прошел. Текущий URL: {page.url}")

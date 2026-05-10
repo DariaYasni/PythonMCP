@@ -1,6 +1,7 @@
 from playwright.sync_api import expect
 import pytest
 
+
 def test_open_first_book(page, home_page):
     home_page.open()
     # Метод сам найдет заголовок и кликнет

@@ -1,64 +1,64 @@
 import pytest
+import requests
 import time
-import logging
 
-logger = logging.getLogger(__name__)
 
-# 1. Проверка статус-кода
-def test_main_page_status(api):
-    response = api.get("/") 
-    assert response.status == 200
+# 1. Health Check (Проверка доступности)
+def test_api_ping_status(api_url):
+    # Тело функции смещено на 4 пробела
+    response = requests.get(f"{api_url}/ping")
+    assert response.status_code == 201, "API тренажер недоступен"
 
-# 2. Проверка заголовков
-def test_main_page_headers(api):
-    response = api.get("/") # ИСПРАВЛЕНО: было get_main_page()
-    headers = response.headers
-    print(f"\nHeaders: {headers}") 
-    assert "text/html" in headers.get("content-type", "").lower()
-    assert "date" in headers
-    assert "cache-control" in headers
 
-# 3. Проверка производительности (Performance)
-def test_main_page_performance(api):
+# 2. Header & Contract Validation (Проверка контракта)
+def test_get_booking_headers(api_url):
+    response = requests.get(f"{api_url}/booking")
+    assert "application/json" in response.headers.get("Content-Type", "")
+    assert response.status_code == 200
+
+
+# 3. Performance Test (SLA)
+def test_api_performance(api_url):
     start_time = time.time()
-    response = api.get("/") # ИСПРАВЛЕНО: было get_main_page()
-    end_time = time.time()
-    duration_ms = (end_time - start_time) * 1000
-    logger.info(f"API Response time: {duration_ms:.2f}ms")
-    assert response.ok
-    assert duration_ms < 1500, f"API слишком медленное: {duration_ms:.2f}ms"
+    requests.get(f"{api_url}/booking")
+    duration_ms = (time.time() - start_time) * 1000
+    assert duration_ms < 5000, f"API слишком медленное: {duration_ms:.2f}ms"
 
-# 4. Проверка целостности контента (Content Integrity)
-def test_main_page_content_integrity(api):
-    response = api.get("/") # ИСПРАВЛЕНО: было get_main_page()
-    body = response.text()
-    assert "<title>" in body.lower()
-    assert len(body) > 100, "Тело ответа слишком короткое"
 
-# 5. Динамическая синхронизация API и UI
-def test_latest_article_consistency(api, home_page):
-    """Проверяет, что заголовок из UI присутствует в коде API"""
-    response = api.get("/") # ИСПРАВЛЕНО: было get_main_page()
-    html_content = response.text()
+# 4. Data Integrity (Целостность данных)
+def test_booking_ids_structure(api_url):
+    response = requests.get(f"{api_url}/booking")
+    data = response.json()
+    assert isinstance(data, list), "Ожидался список бронирований"
+    if len(data) > 0:
+        # Уровень вложенности внутри if — еще 4 пробела
+        assert "bookingid" in data[0]
 
-    home_page.open()
-    ui_titles = home_page.get_all_article_titles()
-    
-    assert len(ui_titles) > 0, "Статьи не найдены на странице"
-    latest_ui_title = ui_titles[0] 
-    
-    assert latest_ui_title in html_content
-    print(f"\n[OK] Актуальная статья найдена: {latest_ui_title}")
 
-# 6. Параметризованный тест разделов (DDT)
-@pytest.mark.parametrize("path, expected_title", [
-    ("books", "Books"),        
-    ("tools", "Tools"),        
-    ("tag/tools", "Tools")     
-])
-def test_sections_availability(api, path, expected_title):
-    """Проверяет доступность подразделов сайта"""
-    response = api.get(path)
-    print(f"\nChecking URL: {response.url}") 
-    assert response.status == 200, f"Раздел {path} недоступен! Статус: {response.status}"
-    assert expected_title in response.text(), f"Заголовок '{expected_title}' не найден в ответе"
+# 5. E2E Scenario (Сквозной тест: Создание -> Проверка)
+def test_create_and_verify_booking(api_url):
+    booking_data = {
+        "firstname": "MidLevel",
+        "lastname": "QA",
+        "totalprice": 500,
+        "depositpaid": True,
+        "bookingdates": {"checkin": "2024-01-01", "checkout": "2024-01-02"},
+        "additionalneeds": "Breakfast",
+    }
+    create_res = requests.post(f"{api_url}/booking", json=booking_data)
+    assert create_res.status_code == 200
+    booking_id = create_res.json()["bookingid"]
+
+    get_res = requests.get(f"{api_url}/booking/{booking_id}")
+    assert get_res.json()["firstname"] == "MidLevel"
+
+
+# 6. Data Driven Testing (Параметризация)
+@pytest.mark.parametrize(
+    "firstname, lastname", [("Sally", "Brown"), ("Jim", "Ericsson")]
+)
+def test_filter_bookings_by_name(api_url, firstname, lastname):
+    url = f"{api_url}/booking?firstname={firstname}&lastname={lastname}"
+    response = requests.get(url)
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)

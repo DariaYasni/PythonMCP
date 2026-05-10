@@ -6,6 +6,7 @@ from playwright.sync_api import expect
 
 logger = logging.getLogger(__name__)
 
+
 def test_full_navigation_e2e(page):
     home = HomePage(page)
 
@@ -21,18 +22,18 @@ def test_full_navigation_e2e(page):
 
     # 4. ВЫПОЛНЯЕМ ПОИСК (через наш стабильный хак с прямым URL)
     page.goto("https://mwtestconsultancy.co.uk", wait_until="networkidle")
-    
+
     # Находим инпут и вводим запрос
     search_input = page.locator("input").first
     search_input.fill("Playwright")
-    
+
     # 5. Проверка результатов
     page.wait_for_timeout(3000)
     results = page.locator("h3")
-    
+
     # Проверяем, что результаты появились
     expect(results.first).to_be_visible(timeout=10000)
     assert results.count() > 0, "Список результатов поиска пуст"
-    
+
     logger.info(f"Поиск успешно отработал. Текущий URL: {page.url}")
     print(f"✓ Успех! Все шаги теста выполнены.")

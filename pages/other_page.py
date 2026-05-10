@@ -1,9 +1,10 @@
 from playwright.sync_api import Page
 
+
 class ContactPage:
     def __init__(self, page: Page):
         self.page = page
-        self.url = 'https://www.mwtestconsultancy.co.uk/contact'
+        self.url = "https://www.mwtestconsultancy.co.uk/contact"
 
     def load(self):
         """Загружает страницу 'Contact Us'."""
@@ -27,4 +28,4 @@ class ContactPage:
 
     def is_confirmation_visible(self) -> bool:
         """Проверяет, появилась ли на странице форма подтверждения отправки."""
-        return self.page.is_visible('div.confirmation-message')
+        return self.page.is_visible("div.confirmation-message")

@@ -1,0 +1,1 @@
+{"uuid": "b32c0f96-fb59-48f8-b8ac-768c370a3542", "children": ["f73ec230-eca6-4e5f-9604-6d79ae56ffdd"], "befores": [{"name": "booker_api", "status": "passed", "start": 1778417842252, "stop": 1778417842302}], "afters": [{"name": "booker_api::0", "status": "passed", "start": 1778417843640, "stop": 1778417843671}], "start": 1778417842252, "stop": 1778417843671}

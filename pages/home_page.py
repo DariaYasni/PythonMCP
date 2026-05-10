@@ -5,6 +5,7 @@ from playwright.sync_api import expect, Page
 
 logger = logging.getLogger(__name__)
 
+
 # --- КЛАСС ДЛЯ API ---
 class APIClient:
     def __init__(self, context, base_url):
@@ -16,18 +17,21 @@ class APIClient:
         url = f"{self.base_url}/{path.lstrip('/')}"
         return self.request.get(url)
 
+
 # --- КЛАСС ДЛЯ UI (HOME PAGE) ---
 class HomePage:
     def __init__(self, page: Page):
         self.page = page
         self.base_url = "https://mwtestconsultancy.co.uk"
-        
+
         # --- УНИВЕРСАЛЬНЫЕ ЛОКАТОРЫ (Оставляем только их) ---
-        self.article_card = page.locator("article, .gh-card, .post-card") 
+        self.article_card = page.locator("article, .gh-card, .post-card")
         self.article_title_inside_card = "h2, h3, .gh-card-title, .post-card-title"
-        
+
         # --- ОСТАЛЬНЫЕ ЛОКАТОРЫ ---
-        self.search_button = page.locator("button[aria-label='Search this site']:visible")
+        self.search_button = page.locator(
+            "button[aria-label='Search this site']:visible"
+        )
         self.search_frame_selector = 'iframe[title="portal-popup"]'
         self.search_input_selector = "input"
         self.header_locator = page.locator("h1")
@@ -54,15 +58,17 @@ class HomePage:
     def search_for(self, text: str):
         portal = self.wait_for_search_portal()
         search_input = portal.locator(self.search_input_selector)
-        search_input.click() 
+        search_input.click()
         search_input.fill(text)
         self.page.keyboard.press("Enter")
-        self.page.wait_for_timeout(2000) # Даем время на обновление результатов
+        self.page.wait_for_timeout(2000)  # Даем время на обновление результатов
 
     @allure.step("Проверить заголовок: {expected_text}")
     def check_title(self, expected_text: str):
         self.header_locator.first.wait_for(state="visible", timeout=15000)
-        expect(self.header_locator.first).to_contain_text(expected_text, ignore_case=True)
+        expect(self.header_locator.first).to_contain_text(
+            expected_text, ignore_case=True
+        )
 
     # --- НОВЫЕ МЕТОДЫ ДЛЯ СТАБИЛЬНОСТИ E2E И API ТЕСТОВ ---
 
@@ -77,7 +83,7 @@ class HomePage:
         first_title_locator = self.page.locator(self.article_title_inside_card).first
         first_title_locator.wait_for(state="visible")
         title_text = first_title_locator.inner_text().strip()
-        
+
         # Кликаем по ссылке в первой карточке
         self.article_card.first.locator("a").first.click()
         self.page.wait_for_load_state("domcontentloaded")
@@ -94,7 +100,9 @@ class HomePage:
     def wait_for_search_portal(self):
         self.search_button.first.click(force=True)
         portal = self.page.frame_locator(self.search_frame_selector)
-        portal.locator(self.search_input_selector).wait_for(state="visible", timeout=15000)
+        portal.locator(self.search_input_selector).wait_for(
+            state="visible", timeout=15000
+        )
         return portal
 
     def is_search_results_empty(self):

@@ -1,0 +1,1 @@
+{"uuid": "903fbf95-6fa0-4951-adea-3db735300b80", "children": ["5e230926-af13-4fdd-8122-a1d04b1ea9ce"], "befores": [{"name": "setup_allure_assets", "status": "passed", "start": 1778104026157, "stop": 1778104026157}], "afters": [{"name": "setup_allure_assets::0", "status": "passed", "start": 1778104027155, "stop": 1778104027158}], "start": 1778104026157, "stop": 1778104027158}
