@@ -1,0 +1,3 @@
+INFO     pages.login_page:login_page.py:25 Переход на https://www.mwtestconsultancy.co.uk
+INFO     pages.login_page:login_page.py:25 Переход на https://www.mwtestconsultancy.co.uk
+INFO     pages.login_page:login_page.py:38 Имитация логина для test@example.com

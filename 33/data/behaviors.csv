@@ -1,0 +1,8 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"12","","1","","45","1","","0"
+"0","","0","Restful Booker API","2","0","6. Data Driven Testing","0"
+"0","","0","Restful Booker API","1","0","1. Health Check","0"
+"0","","0","Restful Booker API","1","0","5. E2E: Create and Verify with Pydantic","0"
+"0","","0","Restful Booker API","1","0","4. Data Integrity","0"
+"0","","0","Restful Booker API","1","0","2. Contract Validation","0"
+"0","","0","Restful Booker API","1","0","3. Performance","0"

@@ -1,0 +1,2 @@
+[32mINFO    [0m test_api:test_api.py:27 API Response time: 1556.48ms
+[32mINFO    [0m test_api:test_api.py:27 API Response time: 554.18ms
